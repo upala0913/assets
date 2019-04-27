@@ -1,0 +1,43 @@
+.goods-door {
+    margin-top: 10px;
+    margin-left:-55px;
+    position:relative;
+    float:left;
+}
+.goods-door li {
+    width: 200px;
+    height: 34px;
+    line-height: 35px;
+    background-color: snow;
+    text-align: center;
+}
+.goods-door li a {
+    display:inline-block;
+    width:100px;
+}
+.icon_font {
+    float:left;
+    margin-left:2px;
+}
+.hb {
+    width: 100px;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    background: #ff6700;
+    display: none;
+    z-index: 1;
+}
+.goods-door li:hover .hb {
+    display:block;
+}
+.goods-door li:hover {
+    background-color: rgb(217, 217, 217);
+}
+.door-content:hover {
+    color: gray;
+    font-weight: bold;
+    background-color: snow;
+    width: 100px;
+}

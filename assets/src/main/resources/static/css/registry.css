@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(240, 243, 239);
+}
+.registry-info {
+    width: 1200px;
+    height: 500px;
+    background-color: pink;
+    position: relative;
+    top: 80px;
+    left: 83px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.registry-table-info {
+    width: 800px;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+.registry-table-info tr {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 20px;
+}
+.registry-title {
+    position: relative;
+    width: 200px;
+    top: 10px;
+    left: 500px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.icon-star-card {
+    color: red;
+    font-size: 5px;
+}
+#userCard, #realName, #password, #repassword, #email {
+    width: 330px;
+    height: 30px;
+    border: 1px solid snow;
+    border-radius: 20px;
+    text-indent: 15px;
+}
+#card {
+    width: 150px;
+    height: 30px;
+    border: 1px solid snow;
+    border-radius: 20px;
+    text-indent: 15px;
+    position: relative;
+    left: -36px;
+}
+.registry-info-title {
+    width: 200px;
+}
+.registry-info-input {
+    width: 200px;
+}
+.sign {
+    width: 25px;
+    height: 26px;
+    border-radius: 50px;
+}
+.table-sign {
+    width: 60px;
+    text-align: left;
+}

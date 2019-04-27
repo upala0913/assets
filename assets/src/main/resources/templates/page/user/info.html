@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title><!-- bootstrap -->
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- css -->
+    <link href="/static/css/commons.css" rel="stylesheet" />
+    <link href="/static/css/utils.css" rel="stylesheet" />
+    <link href="/static/css/info.css" rel="stylesheet" />
+    <link href="/static/iconfont/iconfont.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- header -->
+<div class="row header-goods" >
+    <div class="col-lg-12 header-goods" >
+        <div class="col-lg-3 left commons" >
+            <div align="center" >
+                <img class="logo commons" alt="logo" src="/static/image/goods.png" />
+            </div>
+        </div>
+        <div class="col-lg-6 model commons" >
+            <div class="title" >用户个人信息中心</div>
+        </div>
+        <div class="col-lg-3 right commons" ></div>
+    </div>
+</div>
+
+<!-- 内容 -->
+<div class="col-lg-12" >
+    <div class="col-lg-2" ></div>
+    <div class="col-lg-8 info_content_model" >
+        <div class="col-lg-12" >
+            <div class="col-lg-4 model_left" >
+                <span class="user_image" >
+                    <img class="user_header" src="/static/image/user/header.jpg" alt="头像">
+                    <form class="form" enctype="multipart/form-data" >
+                        <input class="file" type="file" name="file" /><br>
+                        <a href="javascript:;" class="btn btn-default submit" >上传</a>
+                    </form>
+                </span>
+                <div class="user-info" >
+                    <div><a class="update-info" href="#">修改密码</a></div>
+                    <input type="text" class="fileName" />
+                </div>
+            </div>
+            <div class="col-lg-8 model_right" >
+                <div class="base-info" >基本信息</div>
+                <table class="user-table-info" >
+                    <tr>
+                        <td>
+                            <label for="userNo">用户编号</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="userNo" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="userName">用户昵称</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="userName" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="realName">用户真名</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="realName" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">用户密码</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="password" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="userState">激活状态</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="userState" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="vipState"><i class="iconfont" >&#xe640;</i>会员状态</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="vipState" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">用户邮箱</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="email" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                            <a href="javascript:;" class="btn btn-default" >提交</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:;" class="btn btn-default" >重置</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:;" class="btn btn-default" >返回</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="detail-info" >详细信息</div>
+                <table class="user-table-info" >
+                    <tr>
+                        <td>
+                            <label for="userPhone">用户电话</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="userPhone" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="userQQ">用户QQ</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="userQQ" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="birthPlace">用户籍贯</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="birthPlace" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="userAddress">用户地址</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="userAddress" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="currentAddress">用户现住址</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="currentAddress" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>会员性别</label>
+                        </td>
+                        <td class="left-info" >
+                            <label for="userSex1" >男</label>&nbsp;&nbsp;&nbsp;&nbsp;<input id="userSex1" name="userSex" type="radio" value="男" >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="userSex2" >女</label>&nbsp;&nbsp;&nbsp;&nbsp;<input id="userSex2" name="userSex" type="radio" value="女" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="userBirthday">用户生日</label>
+                        </td>
+                        <td class="left-info" >
+                            <input id="userBirthday" class="user-td-info" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="userConstellation">用户星座</label>
+                        </td>
+                        <td class="left-info" >
+                            <select name="constellation" class="user-td-info_constellation" id="userConstellation">
+                                <option value="0">-- 请选择 --</option>
+                                <option value="水瓶座">**水瓶座**</option>
+                                <option value="双鱼座">**双鱼座**</option>
+                                <option value="白羊座">**白羊座**</option>
+                                <option value="金牛座">**金牛座**</option>
+                                <option value="双子座">**双子座**</option>
+                                <option value="巨蟹座">**巨蟹座**</option>
+                                <option value="狮子座">**狮子座**</option>
+                                <option value="处女座">**处女座**</option>
+                                <option value="天秤座">**天秤座**</option>
+                                <option value="天蝎座">**天蝎座**</option>
+                                <option value="射手座">**射手座**</option>
+                                <option value="摩羯座">**摩羯座**</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                            <a href="javascript:;" class="btn btn-default" >提交</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:;" class="btn btn-default" >重置</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:;" class="btn btn-default" >返回</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2" ></div>
+</div>
+
+<!-- footer -->
+<div class="col-lg-12 footer" >
+    <div class="col-lg-4 commons" ></div>
+    <div class="col-lg-4 commons" >
+        &copy;版权归upala所有
+    </div>
+    <div class="col-lg-4 commons" ></div>
+</div>
+
+<!-- message -->
+
+<!-- 消息框 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">消息</h4>
+            </div>
+            <div class="modal-body" id="message"></div>
+            <div class="modal-footer">
+                <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    ok
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- js -->
+<script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/js/info.js"></script>
+<script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

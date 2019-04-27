@@ -1,0 +1,134 @@
+
+.info_content_model {
+    height: 300px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    padding: 0;
+    margin: 0;
+}
+.footer {
+    top: 207px;
+}
+.model_left, .model_right {
+    height: 490px;
+    padding: 0;
+    margin: 0;
+}
+.model_right {
+    border: 2px solid rgb(255, 68, 1);
+    overflow-y: scroll;
+}
+.user_image {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 150px;
+}
+.user_header {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid pink;
+    border-radius: 50%;
+    animation-delay: 100s;
+}
+.upload_header {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    color: white;
+}
+.user-info {
+    position: relative;
+    top: 190px;
+    left: 63px;
+}
+.update-info {
+    color: #000;
+    font-size: 14px;
+    font-family: 微软雅黑, serif;
+}
+.update-info:hover {
+    text-decoration: none;
+    color: rgb(255, 68, 1);
+}
+.form {
+    position: relative;
+    top: 110px;
+    left: 10px;
+}
+.file {
+    width: 75px;
+    position: relative;
+    left: -13px;
+}
+.submit {
+    position: relative;
+    top: -50px;
+    left: 40px;
+}
+.base-info {
+    width: 553px;
+    height: 35px;
+    background-color: rgb(255, 68, 1);
+    text-align: left;
+    line-height: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 微软雅黑, serif;
+    padding-left: 15px;
+}
+.detail-info {
+    width: 553px;
+    height: 35px;
+    background-color: rgb(255, 68, 1);
+    text-align: left;
+    line-height: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 微软雅黑, serif;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+}
+.user-table-info {
+    width: 550px;
+}
+.user-table-info tr {
+    height: 50px;
+}
+.user-table-info td {
+    text-align: center;
+}
+.user-td-info {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    text-indent: 20px;
+    background-color: pink;
+}
+.user-td-info_constellation {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    text-indent: 65px;
+    background-color: pink;
+}
+.left-info {
+    width: 400px;
+}
+.vipState {
+    color: red;
+}

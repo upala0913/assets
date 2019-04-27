@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(240, 243, 239);
+}
+.login-title {
+    position: relative;
+    top: 20px;
+    left: 380px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login {
+    position: relative;
+    top: 55px;
+    left: 650px;
+    width: 100px;
+    padding: 0;
+    margin: 0;
+}
+.login-table {
+    width: 300px;
+    height: 100px;
+}
+.login-table tr {
+    height: 40px;
+}
+.login-forget {
+    position: relative;
+    top: 0;
+    left: 60px;
+}
+.login-content {
+    width: 1000px;
+    height: 350px;
+    background-color: pink;
+    position: relative;
+    top: 120px;
+    left: 183px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+.login-text {
+    border: 0 solid gray;
+    border-radius: 20px;
+    width: 190px;
+    height: 30px;
+    text-indent: 15px;
+}
+.sign {
+    width: 25px;
+    height: 26px;
+    border-radius: 50px;
+}
+.table-sign {
+    width: 30px;
+    text-align: left;
+}
+a.active {
+    position: relative;
+    left: 50px;
+}

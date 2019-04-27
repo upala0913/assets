@@ -1,0 +1,12 @@
+img {
+    boder: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: rgb(240, 243, 239);
+}

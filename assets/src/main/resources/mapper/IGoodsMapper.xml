@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.isoftstone.upala.assets.mapper.IGoodsMapper" >
+
+    <!-- 查询商品 -->
+    <select id="queryAllGoods" resultType="Goods" >
+        SELECT goodsName, goodsSellPrice, goodsDescribe, goodsImage FROM goods LIMIT #{start}, #{size}
+    </select>
+
+    <!-- 商品查询 -->
+    <select id="queryGoods" resultType="Goods" >
+        SELECT * FROM goods
+        <where>
+            <if test="goodsNo != null">
+                AND goodsNo = #{goodsNo}
+            </if>
+        </where>
+    </select>
+
+</mapper>

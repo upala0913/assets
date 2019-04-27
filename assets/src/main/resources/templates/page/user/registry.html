@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <!-- bootstrap -->
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- css -->
+    <link href="/static/css/registry.css" rel="stylesheet">
+    <!-- js -->
+    <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/registry.js"></script>
+</head>
+<body>
+<div class="registry-content">
+    <div class="registry-info">
+        <div class="registry-title">请填写信息</div>
+        <table class="registry-table-info">
+            <tr>
+                <td class="registry-info-title">
+                    <label for="userCard">
+                        <i class="glyphicon glyphicon-star icon-star-card"></i>
+                        账号
+                    </label>
+                </td>
+                <td class="registry-info-input">
+                    <input placeholder="请填写账号" id="userCard" type="text">
+                </td>
+                <td class="table-sign">
+                    <span id="userCard-sign"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="registry-info-title">
+                    <label for="realName">
+                        <i class="glyphicon glyphicon-star icon-star-card"></i>
+                        真实姓名
+                    </label>
+                </td>
+                <td class="registry-info-input">
+                    <input placeholder="请填写真实姓名" id="realName" type="text">
+                </td>
+                <td class="table-sign">
+                    <span id="realName-sign"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="registry-info-title">
+                    <label for="password">
+                        <i class="glyphicon glyphicon-star icon-star-card"></i>
+                        密码
+                    </label>
+                </td>
+                <td class="registry-info-input">
+                    <input placeholder="请填写密码" id="password" type="password">
+                </td>
+                <td class="table-sign">
+                    <span id="password-sign"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="registry-info-title">
+                    <label for="repassword">
+                        <i class="glyphicon glyphicon-star icon-star-card"></i>
+                        确认密码
+                    </label>
+                </td>
+                <td class="registry-info-input">
+                    <input placeholder="请确认密码" id="repassword" type="password">
+                </td>
+                <td class="table-sign">
+                    <span id="repassword-sign"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="registry-info-title">
+                    <label for="email">
+                        <i class="glyphicon glyphicon-star icon-star-card"></i>
+                        邮件
+                    </label>
+                </td>
+                <td class="registry-info-input">
+                    <input placeholder="请填写邮件" id="email" type="text">
+                </td>
+                <td class="table-sign">
+                    <span id="email-sign"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="registry-info-title">
+                    <label for="card">
+                        <i class="glyphicon glyphicon-star icon-star-card"></i>
+                        验证码
+                    </label>
+                </td>
+                <td class="registry-info-input">
+                    <input placeholder="请填写验证码" id="card" type="text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-default send" href="javascript:void(0);">验证码</a>
+                </td>
+                <td class="table-sign">
+                    <span id="card-sign"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a class="btn btn-default submit" href="javascript:void(0);">提交</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-default" href="javascript:void(0);">重置</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-default" href="/login/userLogin">返回</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- 消息框 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">消息</h4>
+            </div>
+            <div class="modal-body" id="message"></div>
+            <div class="modal-footer">
+                <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    ok
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

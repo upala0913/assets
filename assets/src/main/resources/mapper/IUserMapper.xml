@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.isoftstone.upala.assets.mapper.IUserMapper" >
+
+    <resultMap id="userMapper" type="User" >
+        <id property="id" column="id" />
+        <id property="userNo" column="userno" />
+        <result property="username" column="username" />
+        <result property="realName" column="realname" />
+        <result property="password" column="password" />
+        <result property="userStatus" column="userstatus" />
+        <result property="vipStatus" column="vipstatus" />
+        <result property="email" column="email" />
+        <result property="picture" column="picture" />
+    </resultMap>
+
+    <!-- 查询用户 -->
+    <select id="queryUsername" resultType="java.lang.String" >
+        SELECT username FROM `user`
+        <where>
+            <if test="username != null" >
+                AND username = #{username}
+            </if>
+        </where>
+    </select>
+
+    <!-- 查询用户状态 -->
+    <select id="queryUserState" resultType="Integer" >
+        SELECT userstatus FROM `user`
+        <where>
+            <if test="userNo != null" >
+                AND userno = #{userNo}
+            </if>
+        </where>
+    </select>
+
+    <!-- 查询账号密码是否正确 -->
+    <select id="queryUser" resultType="User" >
+        SELECT * FROM `user`
+        <where>
+            <if test="username != null" >
+                AND username = #{username}
+            </if>
+            <if test="password != null" >
+                AND password = #{password}
+            </if>
+        </where>
+    </select>
+
+    <!-- 动态SQL片段 key-->
+    <sql id="key" >
+        <trim suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="username != null" >
+                username,
+            </if>
+            <if test="realName != null" >
+                realName,
+            </if>
+            <if test="password != null" >
+                password,
+            </if>
+            <if test="userStatus != null" >
+                userStatus,
+            </if>
+            <if test="vipStatus != null" >
+                vipStatus,
+            </if>
+            <if test="email != null" >
+                email,
+            </if>
+            <if test="picture != null" >
+                picture,
+            </if>
+        </trim>
+    </sql>
+    <!-- 动态SQL片段 value-->
+    <sql id="value" >
+        <trim suffixOverrides="," >
+            <if test="id != null" >
+                #{id},
+            </if>
+            <if test="username != null" >
+                #{username},
+            </if>
+            <if test="realName != null" >
+                #{realName},
+            </if>
+            <if test="password != null" >
+                #{password},
+            </if>
+            <if test="userStatus != null" >
+                #{userStatus},
+            </if>
+            <if test="vipStatus != null" >
+                #{vipStatus},
+            </if>
+            <if test="email != null" >
+                #{email},
+            </if>
+            <if test="picture != null" >
+                #{picture},
+            </if>
+        </trim>
+    </sql>
+    <insert id="addUser" parameterType="User" useGeneratedKeys="true" keyProperty="id" >
+        INSERT INTO user (<include refid="key" />) VALUES (<include refid="value" />)
+    </insert>
+
+    <!-- 修改用户状态 -->
+    <update id="updateUserState" >
+        UPDATE `user`
+        <set>
+            <if test="state != null">
+                userstatus = #{state}
+            </if>
+        </set>
+        WHERE userno = #{userNo}
+    </update>
+
+    <!-- 查询用户编号 -->
+    <select id="queryUserNo" resultType="java.lang.String" >
+        SELECT userno FROM `user`
+        <where>
+            <if test="username != null" >
+                AND username = #{username}
+            </if>
+            <if test="password != null" >
+                AND password = #{password}
+            </if>
+        </where>
+    </select>
+
+    <!-- 添加头像 -->
+    <update id="addPicture" >
+        UPDATE `user`
+        <set>
+            <if test="picture != null">
+                picture=#{picture}
+            </if>
+        </set>
+        WHERE userno = #{userNo}
+    </update>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
