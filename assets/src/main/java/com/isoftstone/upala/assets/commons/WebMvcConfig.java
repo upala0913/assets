@@ -3,10 +3,7 @@ package com.isoftstone.upala.assets.commons;
 import com.isoftstone.upala.assets.utils.PathUtils;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 
 /**
  * 静态资源
@@ -18,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 @Configuration
 @Log4j2
-public class WebMvcConfig extends WebMvcConfigurerAdapter
+public class WebMvcConfig implements WebMvcConfigurer
 {
 
     /**
@@ -36,7 +33,6 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter
 
 		registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
 		registry.addResourceHandler("/img/**").addResourceLocations(filePath);
-		super.addResourceHandlers(registry);
 	}
 
     /**
@@ -50,7 +46,6 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter
         registry.addViewController("/registry.html").setViewName("page/user/registry");
         registry.addViewController("/info.html").setViewName("page/user/info");
         registry.addViewController("/assets/address").setViewName("page/goods/address");
-        super.addViewControllers(registry);
     }
 
     /**

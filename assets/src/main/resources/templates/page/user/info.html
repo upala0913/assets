@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>个人信息</title><!-- bootstrap -->
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/bootstrap-date/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <!-- css -->
     <link href="/static/css/commons.css" rel="stylesheet" />
     <link href="/static/css/utils.css" rel="stylesheet" />
     <link href="/static/css/info.css" rel="stylesheet" />
-    <link href="/static/iconfont/iconfont.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -140,18 +140,40 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="userAddress">用户地址</label>
+                            <label>用户地址</label>
                         </td>
                         <td class="left-info" >
-                            <input id="userAddress" class="user-td-info" type="text">
+                            <select name="address" class="province">
+                                <option value="0">请选择</option>
+                            </select>
+                            省/直辖市
+                            <select name="address" class="city">
+                                <option value="0">请选择</option>
+                            </select>
+                            市/地区
+                            <select name="address" class="town">
+                                <option value="0">请选择</option>
+                            </select>
+                            区/县
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="currentAddress">用户现住址</label>
+                            <label>用户现住址</label>
                         </td>
                         <td class="left-info" >
-                            <input id="currentAddress" class="user-td-info" type="text">
+                            <select name="address" class="province">
+                                <option value="0">请选择</option>
+                            </select>
+                            省/直辖市
+                            <select name="address" class="city">
+                                <option value="0">请选择</option>
+                            </select>
+                            市/地区
+                            <select name="address" class="town">
+                                <option value="0">请选择</option>
+                            </select>
+                            区/县
                         </td>
                     </tr>
                     <tr>
@@ -169,7 +191,7 @@
                             <label for="userBirthday">用户生日</label>
                         </td>
                         <td class="left-info" >
-                            <input id="userBirthday" class="user-td-info" type="text">
+                            <input id="userBirthday" class="date user-td-info" type="text" placeholder="请选择日期" >
                         </td>
                     </tr>
                     <tr>
@@ -217,8 +239,6 @@
     <div class="col-lg-4 commons" ></div>
 </div>
 
-<!-- message -->
-
 <!-- 消息框 -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -242,7 +262,10 @@
 
 <!-- js -->
 <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="/static/js/info.js"></script>
 <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/bootstrap-date/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="/static/bootstrap-date/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="/static/js/info.js"></script>
+<script type="text/javascript" src="/static/js/address.js"></script>
 </body>
 </html>

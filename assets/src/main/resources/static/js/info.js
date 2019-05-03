@@ -50,4 +50,17 @@ $(function () {
         }
     });
 
+    /**
+     * 格式化日期
+     */
+    $(".date").datetimepicker ({
+        minView: "month",
+        language: "zh-CN",
+        autoclose: true, //选中之后自动隐藏选择框
+        clearBtn: true, // 清除按钮
+        todayBtn: true, // 今日按钮
+        format: "yyyy-MM-dd",
+        pickerPosition: "top-right" // 在文本框的上面显示
+    });
+
 });

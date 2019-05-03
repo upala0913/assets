@@ -37,14 +37,14 @@ $(function () {
     // 市级区级
     var initEvent = function ()
     {
-        $("#province").on("change", onProvinceChange);
-        $("#city").on("change", onCityChange);
+        $(".province").on("change", onProvinceChange);
+        $(".city").on("change", onCityChange);
     };
     var onProvinceChange = function ()
     {
         var $this = $(this),
             val = $this.val();
-        $("#city, #town").html("<option value='0' >请选择</option>");
+        $(".city, .town").html("<option value='0' >请选择</option>");
         if (val == 0)
         {
             return ;
@@ -57,7 +57,7 @@ $(function () {
             val = $this.val();
         if (val == 0)
         {
-            $("#town").html("<option value='0' >请选择</option>");
+            $(".town").html("<option value='0' >请选择</option>");
             return ;
         }
         getData(val, "town");
@@ -69,7 +69,7 @@ $(function () {
         $.each(data, function (index, obj) {
             arr.push("<option value="+ obj.id +" >"+ obj.name +"</option>");
         });
-        $("#" + area).html(arr.join(""));
+        $("." + area).html(arr.join(""));
     };
 
     // 初始化
