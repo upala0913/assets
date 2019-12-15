@@ -2,7 +2,7 @@
 
 <Configuration status="debug" strict="true" name="XMLConfigTest" packages="org.apache.logging.log4j.test">
     <Properties>
-        <Property name="filename">H:\\utils\\log\\java_log\\log4j.log</Property>
+        <Property name="filename">H:/utils/log/java_log/log4j.log</Property>
     </Properties>
     <Filter type="ThresholdFilter" level="debug"/>
     <Appenders>

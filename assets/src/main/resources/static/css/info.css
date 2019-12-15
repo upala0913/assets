@@ -18,6 +18,9 @@
 .model_right {
     border: 2px solid rgb(255, 68, 1);
     overflow-y: scroll;
+    width: 600px;
+    position: absolute;
+    left: 300px;
 }
 .user_image {
     width: 100px;
@@ -75,7 +78,7 @@
     left: 40px;
 }
 .base-info {
-    width: 553px;
+    width: 579px;
     height: 35px;
     background-color: rgb(255, 68, 1);
     text-align: left;
@@ -87,7 +90,7 @@
     padding-left: 15px;
 }
 .detail-info {
-    width: 553px;
+    width: 579px;
     height: 35px;
     background-color: rgb(255, 68, 1);
     text-align: left;
